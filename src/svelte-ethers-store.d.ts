@@ -121,6 +121,10 @@ export const selectedAccount: DefaultEVMStore["selectedAccount"];
  * After a contract as be declared, you can use its instance anywhere using the $ notation and the logical name that was declared in `attachContract()`
  */
 export const contracts: Readable<Record<string, Contract>>;
+/**
+ * Information about current chain when connected
+ */
+export const chainData: DefaultEVMStore['chainData'];
 
 /**
  * You might want to access all chains CAIP-2 data directly without using the chainData store.
