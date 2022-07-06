@@ -84,6 +84,10 @@ export interface DefaultEVMStore {
      */
     chainId: Readable<number | string>;
     /**
+     * The current chainData (if connected).
+     */
+    chainData: Readable<ChainData>;
+    /**
      * Store value is a shortcut to get `$signer.getAddress()` when connected.
      */
     signerAddress: Readable<string>;
